@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 300px;
+    height: 111px;
+}
+
+.texto h2 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 290px;
+    height: 45px;
+}
+
+.texto p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 300px;
+    height: 55px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .input-text {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.formulario .mensagem {
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.formulario input::placeholder {
+    padding-left: 10px;
+    font-size: 15px;
+    color: #A8A8A8;
+    font-weight: 700;
+}
+
+.mensagem::placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #A8A8A8;
+    font-weight: 700;
+}
+
+.formulario .alerta {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 145px;
+    height: 20px;
+}
+
+.formulario .button-enviar {
+    font-size: 75px;
+    background-color: #3CCC87;
+    color: #FFFFFF;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.error {
+    display: none;
+}
+
+.campo-vazio {
+    border: 1px solid #F52E2E;
+}
+
+.campo-preenchido {
+    border: 1px solid #00C22B;
+}
+
+.alerta-campo-vazio {
+    color: #F52E2E;
+    font-size: 8px;
+    margin-left: 20px;
+}
